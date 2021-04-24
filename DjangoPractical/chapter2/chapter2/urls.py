@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from bookmark.views import BookMarkLV, BookmarkDV
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('bookmark', BookMarkLV.as_view(), name="index"),
+    path('bookmark/<int:pk>', BookmarkDV.as_view(), name="detail"),
 ]
