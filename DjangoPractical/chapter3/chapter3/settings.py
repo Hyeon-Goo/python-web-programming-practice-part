@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
-
+    'bookmark.apps.BookmarkConfig',
 ]
 
 MIDDLEWARE = [
@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ko-kr'
 
-TIME_ZONE = 'Seoul/Asia'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
