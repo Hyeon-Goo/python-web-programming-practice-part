@@ -10,3 +10,4 @@ class BookMarkLV(ListView):
 
 class BookmarkDV(DetailView):
     model = Bookmark
+    template_name = 'bookmark/bookmark_detail.html'
