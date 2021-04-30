@@ -23,7 +23,7 @@ class Photo(models.Model):
     title = models.CharField('TITLE', max_length=30)
     description = models.TextField('Photo Description', blank=True)
     image = ThumbnailImageField(upload_to='photo/%Y/%m')
-    uploaded_dt = models.DateTimeField('Upload Date', auto_now_add=True)
+    upload_dt = models.DateTimeField('Upload Date', auto_now_add=True)
 
     class Meta:
         ordering = ('title',)
