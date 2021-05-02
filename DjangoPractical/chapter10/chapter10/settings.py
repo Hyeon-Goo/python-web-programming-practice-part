@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'bookmark.apps.BookmarkConfig',
     'taggit.apps.TaggitAppConfig',
     'taggit_templatetags2',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -145,5 +146,10 @@ TAGGIT_LIMIT = 50
 # DISQUS 접속정보
 DISQUS_SHORTNAME = 'django-practice-localhost'
 DISQUS_MY_DOMAIN = 'http://localhost:8000'
+
+
+# log in settings
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
 
 
