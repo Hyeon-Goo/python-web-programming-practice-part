@@ -25,4 +25,5 @@ urlpatterns = [
     path('accounts/register/done', UserCreateDoneTV.as_view(), name='register_done'),
     path('bookmark/', include('bookmark.urls')),
     path('blog/', include('blog.urls')),
+    path('photo/', include('photo.urls')),
 ]
