@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from chapter10.views import HomeView, UserCreateView, UserCreateDoneTV
+from chapter11.views import HomeView, UserCreateView, UserCreateDoneTV
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
