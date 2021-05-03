@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% block title %}
+register_done.html
+{% endblock %}
+{% block content %}
+    <h1>Registration Complete Successfully</h1>
+    <br>
+    <p>Thank you for registering.</p>
+    <p class="font-italic"><a href="{% url 'login' %}">Log in</a></p>
+{% endblock %}
